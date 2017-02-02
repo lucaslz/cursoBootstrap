@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Loja Virtual</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<meta name="viewport" content="width=device-width" />
+		<style type="text/css" media="screen">
+			.navbar-header button {
+				color:#ffffff;
+			}
+
+			.fullscreen {
+				width: 100%;
+			}
+
+			main {
+				margin-top: 50px;
+			}
+
+			footer {
+				background-color: #333333;
+				color:#ffffff;
+				text-align: center;
+				padding: 20px 0;
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- Cabeçalho -->
+
+		<header>
+			<nav class="navbar navbar-fixed-top navbar-inverse">
+				<div class="navbar-header">
+					<a href="#home" class="navbar-brand">Caelum</a>
+					<button class="navbar-toggle" type="button" data-target=".navbar-collapse" data-toggle="collapse">Menu</button>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#novidades">Novidades</a></li>
+						<li><a href="#maisVendidos">Mais Vendidos</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								Camisetas
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li> <a href="#">Masculino</a></li>
+								<li> <a href="#">Feminino</a></li>
+								<li> <a href="#">Infantil</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-right">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Digite o que você procura" />
+						</div>
+						<input type="submit" value="Buscar" class="btn btn-default" />
+					</form>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Conteúdo principal -->
+
+		<main>
+		<!-- Banner -->
+			<div class="container-fluid">
+				<div class="row" id="home">
+					<div id="carousel" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="img/banner1.jpg" alt="Moda" class="fullscreen">
+							</div>
+							<div class="item">
+								<img src="img/banner2.jpg" alt="Moda Infantil" class="fullscreen">
+							</div>
+						</div>
+					<a href="#carousel" data-slide="prev" class="left carousel-control">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a href="#carousel" data-slide="next" class="right carousel-control">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Listagem -->
+			<div class="container-fluid">
+				<div clas="row">
+					<div class="col-xs-12 col-sm-3">
+						<div class="text-center">
+							<h3>Categorias</h3>
+						</div>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="#">Camisetas Masculinas</a></li>
+							<li class="list-group-item"><a href="#">Camisetas Femininas</a></li>
+							<li class="list-group-item"><a href="#">Camisetas Inverno</a></li>
+							<li class="list-group-item"><a href="#">Roupas de Verão</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Conteúdo -->
+				<div class="col-xs-12 col-sm-9">
+					<div id="novidades">
+						<h3 class="text-center">Novidades</h3>
+					</div>
+					<div class="col-xs-12 col-md-4 thumbnail text-center wow fadeInUp" data-wow-delay="30mm">
+						<figure>
+							<img src="img/camisa-azul.png" alt="Camisa Azul Importada" />
+							<div>
+								<h4>Camisa Azul Importada</h4>
+								<p>Camisa Azul Importada por um preço acessivel e com pano de qualidade</p>
+							</div>
+						</figure>
+						<div class="btn-group">
+							<a href="#" class="btn btn-default">R$ 190,00</a>
+							<a href="#" class="btn btn-primary">
+								<span class="glyphicon glyphicon-shopping-cart">
+								</span>
+								Comprar
+							</a>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4 thumbnail text-center wow fadeInUp"  data-wow-delay="30mm">
+						<figure>
+							<img src="img/camisa-rosa.png" alt="Camisa Rosa Argentina" />
+							<div>
+								<h4>Camisa Rosa Argentina</h4>
+								<p>Camisa Rosa Argentina por um preço acessivel e com pano de qualidade</p>
+							</div>
+						</figure>
+						<div class="btn-group">
+							<a href="#" class="btn btn-default">R$ 210,00</a>
+							<a href="#" class="btn btn-primary">
+								<span class="glyphicon glyphicon-shopping-cart">
+								</span>
+								Comprar
+							</a>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4 thumbnail text-center wow fadeInUp"  data-wow-delay="30mm">
+						<figure>
+							<img src="img/camisa-azul.png" alt="Camisa Azul Importada" />
+							<div>
+								<h4>Camisa Azul Nacional</h4>
+								<p>Camisa Azul Nacional por um preço acessivel e bonita</p>
+							</div>
+						</figure>
+						<div class="btn-group">
+							<a href="#" class="btn btn-default">R$ 90,00</a>
+							<a href="#" class="btn btn-primary">
+								<span class="glyphicon glyphicon-shopping-cart">
+								</span>
+								Comprar
+							</a>
+						</div>
+					</div>
+					<div id="maisVendidos">
+						<h3 class="text-center">Mais Vendidos</h3>
+					</div>
+					<div class="col-xs-12 col-md-4 thumbnail text-center wow fadeInUp" data-wow-delay="30mm">
+						<figure>
+							<img src="img/camisa-azul.png" alt="Camisa Azul Importada" />
+							<div>
+								<h4>Camisa Azul Importada</h4>
+								<p>Camisa Azul Importada por um preço acessivel e com pano de qualidade</p>
+							</div>
+						</figure>
+						<div class="btn-group">
+							<a href="#" class="btn btn-default">R$ 190,00</a>
+							<a href="#" class="btn btn-primary">
+								<span class="glyphicon glyphicon-shopping-cart">
+								</span>
+								Comprar
+							</a>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4 thumbnail text-center wow fadeInUp"  data-wow-delay="30mm">
+						<figure>
+							<img src="img/camisa-rosa.png" alt="Camisa Rosa Argentina" />
+							<div>
+								<h4>Camisa Rosa Argentina</h4>
+								<p>Camisa Rosa Argentina por um preço acessivel e com pano de qualidade</p>
+							</div>
+						</figure>
+						<div class="btn-group">
+							<a href="#" class="btn btn-default">R$ 210,00</a>
+							<a href="#" class="btn btn-primary">
+								<span class="glyphicon glyphicon-shopping-cart">
+								</span>
+								Comprar
+							</a>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4 thumbnail text-center wow fadeInUp"  data-wow-delay="30mm">
+						<figure>
+							<img src="img/camisa-azul.png" alt="Camisa Azul Importada" />
+							<div>
+								<h4>Camisa Azul Nacional</h4>
+								<p>Camisa Azul Nacional por um preço acessivel e bonita</p>
+							</div>
+						</figure>
+						<div class="btn-group">
+							<a href="#" class="btn btn-default">R$ 90,00</a>
+							<a href="#" class="btn btn-primary">
+								<span class="glyphicon glyphicon-shopping-cart">
+								</span>
+								Comprar
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			Avenida Paulista n 1 <br />
+			(11) 2596-1234
+		</footer>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript"  src="js/wow.min.js"></script>
+		<script>
+			$(function(){
+				new WOW().init();
+			});
+		</script>
+	</body>
+</html>
